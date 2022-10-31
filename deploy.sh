@@ -10,5 +10,5 @@ docker push vzambare/multi-worker:latest
 kubectl apply -f k8s
 
 kubectl set image deployments/server-deployment server=vzambare/multi-server:$GIT_SHA
-kubectl set image deployments/client-deployment server=vzambare/multi-client:$GIT_SHA
-kubectl set image deployments/worker-deployment server=vzambare/multi-worker:$GIT_SHA
+kubectl set image deployments/client-deployment client=vzambare/multi-client:$GIT_SHA
+kubectl set image deployments/worker-deployment worker=vzambare/multi-worker:$GIT_SHA
