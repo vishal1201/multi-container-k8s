@@ -14,7 +14,7 @@ before_install:
   - gcloud config set project multi-k8s-368004
   - gcloud config set compute/zone asia-south1-a
   - gcloud container clusters get-credentials multi-cluster
-  - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
+  - echo "$DOCKER_PASSWORD" | docker login --username "$DOCKER_USERNAME" --password-stdin
   - docker build -t vzambare/react-test -f ./client/Dockerfile.dev ./client
   - rm -rf service-account.json
 
