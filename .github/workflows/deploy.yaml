@@ -5,7 +5,7 @@ on:
       - master
  
 env:
-  SHA: $(git rev-parse HEAD)
+  GIT_SHA: $(git rev-parse HEAD)
  
 jobs:
   build:
