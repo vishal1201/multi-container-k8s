@@ -42,7 +42,7 @@ spec:
                 name: server-cluster-ip-service
                 port:
                   number: 5000
-    - host: pelligent.in
+    - host: www.pelligent.in
       http:
         paths:
           - path: /?(.*)
